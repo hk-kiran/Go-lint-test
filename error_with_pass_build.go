@@ -131,6 +131,7 @@ func mergesortv3(s []int) {
 	}
 }
 
+
 func main() {
 	version := "v1"
 	if len(os.Args) == 2 {
@@ -154,4 +155,17 @@ func main() {
 		mergesortv3(s)
 	}
 
+
+fmt.Sprintf("%s", x)
+fmt.Sprintf("%s", y)
+fmt.Sprintf("%s", z)
 }
+
+type T1 string
+type T2 int
+func (T2) String() string { return "Hello, world" }
+
+
+var x string
+var y T1
+var z T2
