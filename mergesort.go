@@ -152,8 +152,6 @@ func main() {
 		mergesortv2(s)
 	case "v3":
 		mergesortv3(s)
-	case "v1":
-		mergesortv1(s)
 	}
 
 }
