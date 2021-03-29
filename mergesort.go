@@ -1,4 +1,4 @@
-package letter
+package main
 
 import (
 	"fmt"
@@ -142,8 +142,8 @@ func main() {
 		fmt.Println("Error:", err)
 		return
 	}
-	// trace.Start(f)
-	// defer trace.Stop()
+	trace.Start(f)
+	defer trace.Stop()
 
 	switch version {
 	case "v1":
@@ -152,8 +152,6 @@ func main() {
 		mergesortv2(s)
 	case "v3":
 		mergesortv3(s)
-	case "v2":
-		mergesortv2(s)
 	}
 
 }
